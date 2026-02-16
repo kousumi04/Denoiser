@@ -1,0 +1,35 @@
+# Core Deep Learning
+# torch>=2.1.0
+# torchvision>=0.16.0
+# torchaudio>=2.1.0
+
+# Mixed Precision & Acceleration
+tqdm
+numpy
+scipy
+
+# Image Processing
+opencv-python
+Pillow
+imageio
+scikit-image
+
+# RAW image handling (only if you later use RAW datasets)
+rawpy
+
+# Data Handling
+pandas
+matplotlib
+
+# Metrics
+lpips
+piq
+
+# Augmentation
+albumentations
+
+# Web App
+streamlit
+
+# Utilities
+requests
