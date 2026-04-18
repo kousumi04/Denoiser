@@ -254,7 +254,7 @@ export async function POST(request: Request) {
       );
     }
 
-    return new Response(decoded, {
+    return new Response(new Blob([decoded]), {
       status: 200,
       headers: {
         "Content-Type": "image/png",
