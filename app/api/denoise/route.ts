@@ -254,7 +254,12 @@ export async function POST(request: Request) {
       );
     }
 
-    return new Response(new Blob([decoded]), {
+    const imageBuffer = decoded.buffer.slice(
+      decoded.byteOffset,
+      decoded.byteOffset + decoded.byteLength
+    ) as ArrayBuffer;
+
+    return new Response(imageBuffer, {
       status: 200,
       headers: {
         "Content-Type": "image/png",
