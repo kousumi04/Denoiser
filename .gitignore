@@ -37,3 +37,6 @@ inference/outputs/
 frontend/node_modules/
 frontend/.next/
 frontend/.env.local
+
+# Vercel local metadata
+.vercel/

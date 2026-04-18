@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "installCommand": "npm install --prefix frontend",
+  "buildCommand": "npm run build --prefix frontend",
+  "outputDirectory": "frontend/.next",
+  "env": {
+    "HF_IMAGE_API_URL": "https://kousumi04-denoiser.hf.space/denoise",
+    "HF_HTTP_METHOD": "POST",
+    "HF_REQUEST_MODE": "multipart",
+    "HF_IMAGE_FIELD_NAME": "image",
+    "HF_EXTRA_FIELDS_JSON": "{}"
+  }
+}
