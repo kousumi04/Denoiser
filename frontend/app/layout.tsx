@@ -15,7 +15,7 @@ const sans = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "Denoiser",
-  description: "Upload an image, send it to your deployed Hugging Face denoiser, and download the result."
+  description: "Upload a noisy image, clean it up instantly, and download the result."
 };
 
 export default function RootLayout({

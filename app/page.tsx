@@ -90,7 +90,7 @@ export default function Page() {
       setState((current) => ({
         ...current,
         error: "",
-        status: "Sending image to Hugging Face..."
+        status: "Processing your image..."
       }));
 
       try {
@@ -139,11 +139,11 @@ export default function Page() {
     <main className="shell">
       <section className="hero">
         <article className="heroCard">
-          <div className="eyebrow">HF-powered image cleanup</div>
+          <div className="eyebrow">Image cleanup</div>
           <h1 className="title">Denoise your image in one clean pass.</h1>
           <p className="lede">
-            Upload a noisy photo, route it through your deployed Hugging Face model, compare the
-            result side by side, and download the denoised image when it looks right.
+            Upload a noisy photo, clean it up instantly, compare the result side by side, and
+            download the finished image when it looks right.
           </p>
 
           <div className="heroStats">
@@ -153,7 +153,7 @@ export default function Page() {
             </div>
             <div className="stat">
               <strong>Process</strong>
-              <span>Server-side proxy keeps the HF token off the client.</span>
+              <span>Your image is processed securely behind the scenes.</span>
             </div>
             <div className="stat">
               <strong>Download</strong>
@@ -196,11 +196,6 @@ export default function Page() {
 
           <div className={`status ${state.error ? "statusError" : ""}`}>
             {state.error || state.status}
-          </div>
-
-          <div className="tip">
-            Tip: if your deployed endpoint expects a custom payload shape, set it in
-            `frontend/.env.local` without changing the UI code.
           </div>
         </aside>
       </section>
