@@ -1,3 +1,34 @@
-/checkpoints
-/datasets
-/_pycache_ 
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Model artifacts
+checkpoints/
+*.pt
+*.pth
+
+# Local datasets and preprocessing outputs
+data_pipeline/datasets/
+preprocessed_sidd/
+tmp_sidd_debug/
+
+# Inference outputs and local test assets
+inference/outputs/
+*_denoised.png
+*_denoised.jpg
+*_clean.png
+*_clean.jpg
+*_eval.png
+
+# Logs
+*.log

@@ -14,7 +14,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 try:
-    from models.drunet import DRUNet
+    from training.models.drunet import DRUNet
 except ModuleNotFoundError:
     from training.models.drunet import DRUNet
 
