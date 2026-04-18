@@ -81,9 +81,11 @@ export default function Page() {
       return;
     }
 
+    const file = state.sourceFile;
+
     startTransition(async () => {
       const formData = new FormData();
-      formData.append("image", state.sourceFile);
+      formData.append("image", file);
 
       setState((current) => ({
         ...current,
